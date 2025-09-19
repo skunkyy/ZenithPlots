@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://i.imgur.com/kFY5DFI.png" alt="ZenithPlots Banner" width="150"/>
+<img src="https://i.imgur.com/kFY5DFI.png" alt="ZenithPlots Banner" width="1000"/>
 
 # ✨ ZenithPlots ✨
 ### _Nowoczesny, w pełni konfigurowalny system działek dla serwerów Minecraft 1.21+_
