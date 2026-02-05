@@ -135,7 +135,7 @@ Bez tego nie ruszymy:
 2.  **[TAB](https://github.com/NEZNAMY/TAB)** - Aby działał nasz **dedykowany scoreboard działkowy**.
 3.  **[WorldGuard](https://dev.bukkit.org/projects/worldguard)** - Aby zablokować tworzenie działek na spawnie.
 4.  **[DecentHolograms](https://www.spigotmc.org/resources/96927/)** lub **FancyHolograms** - Do wyświetlania statystyk nad działką.
-5.  **[ZenithCombatLog](https://github.com/skunkyy/ZenithCombatLog)** (lub inny kompatybilny) - Do blokowania ucieczki na działkę podczas walki.
+5.  **[ZenithCombatLog](https://github.com/skunkyy/ZenithCombatLog)** - Do blokowania ucieczki na działkę podczas walki.
 
 ### ⚙️ Instrukcja
 1.  Pobierz `ZenithPlots-1.0.jar`.
