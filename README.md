@@ -3,124 +3,187 @@
 <img src="https://i.imgur.com/kFY5DFI.png" alt="ZenithPlots Banner" width="1000"/>
 
 # ✨ ZenithPlots ✨
-### _Nowoczesny, w pełni konfigurowalny system działek dla serwerów Minecraft 1.21+_
+### _Definicja nowoczesnego systemu działek dla serwerów Minecraft 1.21+_
 
-**ZenithPlots** to zaawansowany plugin, który przekształca zarządzanie działkami w intuicyjne i potężne doświadczenie. Stworzony z myślą o serwerach Survival, RPG i Freebuild, oferuje graczom pełną kontrolę nad swoimi terenami za pomocą estetycznych menu GUI, a administratorom daje niezrównane narzędzia do moderacji i konfiguracji.
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-21-blue?style=for-the-badge&logo=openjdk" alt="Java 21" />
-  <img src="https://img.shields.io/badge/API-Paper_1.21+-orange?style=for-the-badge" alt="Paper 1.21+" />
-  <img src="https://img.shields.io/badge/Wersja-1.0-brightgreen?style=for-the-badge" alt="Version 1.0" />
-</p>
+![Java](https://img.shields.io/badge/Java-21-blue?style=for-the-badge&logo=openjdk)
+![Platform](https://img.shields.io/badge/Platform-Paper%201.21+-orange?style=for-the-badge&logo=spigotmc)
+![Version](https://img.shields.io/badge/Wersja-1.0-brightgreen?style=for-the-badge)
+![Database](https://img.shields.io/badge/Baza-SQLite%20%7C%20MariaDB-lightgrey?style=for-the-badge&logo=mysql)
 
 </div>
 
 ---
 
-## 🌟 Dlaczego ZenithPlots?
+## 👋 O co chodzi z ZenithPlots?
 
-ZenithPlots został zaprojektowany od podstaw, aby rozwiązać problemy starszych systemów działek. Naszym celem było stworzenie pluginu, który jest jednocześnie **potężny** dla administratorów i **prosty w obsłudze** dla graczy.
+Wyobraź sobie system działek, który nie irytuje graczy, a administratorom daje spokój ducha. **ZenithPlots** to nie jest kolejny fork starego pluginu. To napisany od zera silnik, który stawia na **wydajność** (działa asynchronicznie), **estetykę** (wszystko w GUI) i **elastyczność**.
 
--   **🎮 Skupiony na Graczu:** Wszystkie kluczowe funkcje są dostępne przez interaktywne menu GUI. Koniec z zapamiętywaniem dziesiątek skomplikowanych komend.
--   **🔧 Totalna Konfiguracja:** Każdy aspekt pluginu, od wiadomości po wygląd GUI i scoreboardu, może być zmieniony. Dostosuj ZenithPlots idealnie do swojego serwera.
--   **⚡ Zbudowany dla Wydajności:** Asynchroniczne operacje (zapis, skanowanie terenu), inteligentne cache'owanie chunków i zoptymalizowane listenery zapewniają minimalny wpływ na wydajność serwera.
+Nieważne, czy robisz serwer Survival, Freebuild czy RPG – ten plugin daje graczom kawałek świata, nad którym mają pełną kontrolę, a Ty masz pewność, że nikt tego nie zepsuje.
 
 ---
 
-## 🚀 Główne Funkcje
+## 🔥 Dlaczego pokochasz ten plugin?
 
-| Funkcja                        | Opis                                                                                                                                              |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **💎 Intuicyjne GUI**          | Prawie wszystkie akcje wykonuje się w estetycznych i w 100% konfigurowalnych menu, zaprojektowanych z dbałością o detale.                           |
-| **🛡️ Zaawansowana Ochrona**    | Wielowarstwowy system ochrony przed griefingiem, wybuchami, PvP (blokada ataku z bezpiecznej strefy) oraz spamem miksturami.                       |
-| **👑 System Ról i Uprawnień**  | Przypisuj role (`Współwłaściciel`, `Zaufany`, `Członek`) i deleguj zadania.                                                                        |
-| **✏️ Edytor Uprawnień w Grze** | Właściciele działek mogą dostosować **każdą** z ponad 40 permisji dla każdej roli, tworząc unikalne zestawy uprawnień bez edycji plików.            |
-| **📈 Ulepszenia Działki**       | Rozwijaj swoją działkę, kupując kolejne poziomy ulepszeń dla rozmiaru, limitu lejów, spawnerów, członków, efektów (Haste, Fly) i wielu innych.     |
-| **🏆 Rankingi Działek**         | Wbudowany, asynchroniczny system rankingów oparty na wartości postawionych bloków. Motywuje do rywalizacji i promuje najlepsze budowle.            |
-| **📊 Dedykowany Scoreboard**    | Automatyczny scoreboard wyświetlany po wejściu na działkę (wymaga pluginu TAB), pokazujący statystyki, właściciela i czas wygaśnięcia.             |
-| **🕊️ Latanie na Działce**       | Możliwość włączenia trybu latania (`/dzialka fly`) wyłącznie na terenie własnej działki.                                                           |
-| **⏳ System Wygasania**         | Działki mają datę ważności, którą można przedłużać, co zapobiega powstawaniu opuszczonych i zaniedbanych terenów.                                 |
-| **🔮 Konfigurowalny Border**   | Włącz wizualny border z cząsteczek, aby oznaczyć granice swojej działki i wybierz jego kolor w GUI.                                                 |
-| **🔔 Alarm Wejścia**            | Otrzymuj powiadomienia na czacie (lub Title/Actionbar), gdy obcy gracz wejdzie na Twoją działkę.                                                    |
-| **🌐 Integracje**               | Pełne wsparcie dla **Vault**, **PlaceholderAPI**, **WorldGuard**, **TAB**, **DecentHolograms/FancyHolograms** oraz **ZenithCombatLog**.             |
-| **💾 Wsparcie dla Baz Danych**   | Wybierz między lekkim **SQLite** (domyślnie) a potężnym **MariaDB/MySQL** dla większych serwerów.                                                  |
-| **🕶️ Tryb Bypass dla Admina**   | Administratorzy mogą swobodnie zarządzać każdą działką bez ograniczeń, wchodzić w tryb budowania i ignorować blokady.                              |
+### 💎 Dla Graczy (User Experience)
+*   **Koniec z komendami:** Zapomnij o `/plot flag set pvp true`. Gracz wpisuje `/dzialka panel` i ma wszystko pod ręką w pięknym menu.
+*   **Inteligentny Scoreboard:** Wchodzisz na działkę? Scoreboard zmienia się automatycznie, pokazując kto jest właścicielem, ile ma punktów i kiedy działka wygasa. Wychodzisz? Wraca stary scoreboard (dzięki integracji z TAB).
+*   **System Ulepszeń:** Działka to nie tylko teren. To inwestycja. Gracze wydają pieniądze na powiększanie terenu, limity hopperów, spawnerów, a nawet efekty takie jak Haste czy Fly.
+*   **Latanie:** Tak, gracz może latać, ale **tylko** nad swoją działką. Wyleci poza nią? Fly się wyłącza. Proste i uczciwe.
+
+### 🛡️ Dla Adminów (Security & Performance)
+*   **Pancerna Ochrona:**
+    *   **Anti-Potion Spam:** Nasz autorski system "Obrony Przeciwlotniczej" usuwa wrogie mikstury rzucone z zewnątrz jeszcze w powietrzu. Żadnego trucia graczy na spawnie czy zza granicy działki.
+    *   **Blokada Tłoków & Redstone:** Maszyny lagujące serwer? Nie tutaj. Limity bloków redstone są ściśle przestrzegane.
+    *   **PvP Control:** Walka jest możliwa tylko w dziczy. Jeśli ktokolwiek (atakujący lub ofiara) stoi na działce – obrażenia są anulowane.
+*   **Asynchroniczność:** Zapisywanie działek do bazy (SQLite/MySQL), skanowanie terenu przy zakładaniu działki, przeliczanie rankingu – to wszystko dzieje się w tle. Zero lagów przy autosave.
+*   **Pełna Kontrola:** Komendy `/dzialkaadmin` pozwalają Ci na wszystko – od zmiany właściciela, przez edycję ulepszeń, aż po "teleportację właściciela" do Ciebie.
 
 ---
 
-## 📋 Komendy i Uprawnienia
+## 🚀 Szczegółowy Opis Funkcji
 
-### Gracze (`zenithplots.player`)
--   `/dzialka stworz <nazwa>` - Tworzy nową działkę (`.create`).
--   `/dzialka panel` - Otwiera główny panel zarządzania (`.panel`).
--   `/dzialka dom` - Teleportuje do własnej działki (`.home`).
--   `/dzialka odwiedz <nazwa>` - Teleportuje do działki, której jesteś członkiem (`.visit`).
--   `/dzialka informacje [nazwa]` - Wyświetla sformatowane informacje o działce (`.info`).
--   `/dzialka ranking` - Wyświetla globalny ranking działek (`.ranking`).
--   `/dzialka przelicz` - Ręcznie przelicza punkty rankingu Twojej działki (`.recalculate`).
--   `/dzialka bloki` - Wyświetla listę wartości bloków w rankingu (`.blocks`).
--   `/dzialka latanie` (alias `fly`) - Włącza/wyłącza latanie na działce (`.fly`).
--   `/dzialka dodaj <gracz>` - Zaprasza gracza do działki (`.add`).
--   `/dzialka akceptuj` - Akceptuje zaproszenie.
--   `/dzialka odrzuc` - Odrzuca zaproszenie.
--   `/dzialka wyrzuc <gracz>` - Wyrzuca gracza z działki (`.kick`).
--   `/dzialka zablokuj <gracz>` - Blokuje graczowi wstęp na działkę.
--   `/dzialka odblokuj <gracz>` - Odblokowuje gracza.
--   `/dzialka ustawdom` - Zmienia punkt teleportacji (`.sethome`).
--   `/dzialka usun` - Usuwa Twoją działkę (`.delete`).
--   `/dzialka zmiennazwe <nowa_nazwa>` - Zmienia nazwę działki.
+### 🏆 System Rankingowy (Topki)
+To nie jest zwykły licznik. ZenithPlots skanuje bloki na działce i przyznaje punkty.
+*   **Konfigurowalne wartości:** Ty ustalasz, że `DIAMOND_BLOCK` daje 100 pkt, a `BEACON` 1000 pkt.
+*   **Poziomy:** Punkty przekładają się na poziom działki.
+*   **Asynchroniczne przeliczanie:** Gracz wpisuje `/dzialka przelicz` i dostaje raport: *"Twój poziom wzrósł z 5 na 6! (Awans)"*.
+*   **Placeholdery:** Wyświetl topkę na spawnie używając PlaceholderAPI.
 
-*Uprawnienia do komend gracza: `zenithplots.command.player.<subkomenda>`*
+### 👥 Zaawansowane Zarządzanie Członkami
+Właściciel działki to nie jedyna osoba. Mamy role:
+1.  **Właściciel** (Pełna władza)
+2.  **Współwłaściciel** (Prawie pełna władza)
+3.  **Zaufany** (Budowanie, ale bez zarządzania)
+4.  **Członek** (Podstawowe akcje)
+5.  **Odwiedzający** (Tylko zwiedzanie)
 
-### Administratorzy (`zenithplots.admin`)
--   `/dzialkaadmin bypass` - Włącza/wyłącza tryb pełnego dostępu (budowanie wszędzie, ignorowanie blokad).
--   `/dzialkaadmin panel <nazwa>` - Otwiera panel administracyjny dowolnej działki.
--   `/dzialkaadmin info <nazwa>` - Wyświetla szczegółowe, techniczne informacje o działce.
--   `/dzialkaadmin lookup <gracz>` - Sprawdza listę działek gracza (właściciel/członek).
--   `/dzialkaadmin setowner <nazwa> <gracz>` - Przenosi własność działki na innego gracza.
--   `/dzialkaadmin teleport <nazwa>` - Teleportuje do działki.
--   `/dzialkaadmin teleportwlasciciel <gracz>` - Teleportuje do działki danego gracza.
--   `/dzialkaadmin fly` - Włącza latanie administratora na dowolnej działce.
--   `/dzialkaadmin przelicz <nazwa|*>` - Wymusza przeliczenie rankingu dla działki lub wszystkich.
--   `/dzialkaadmin przedluz <nazwa> <czas>` - Przedłuża ważność działki.
--   `/dzialkaadmin usun <nazwa>` - Natychmiastowo usuwa działkę (z bazy i mapy).
--   `/dzialkaadmin dodaj <nazwa> <gracz>` - Wymusza dodanie gracza.
--   `/dzialkaadmin wyrzuc <nazwa> <gracz>` - Wymusza wyrzucenie gracza.
--   `/dzialkaadmin ulepszenia <nazwa> <typ> set <poziom>` - Ustawia poziom ulepszenia.
--   `/dzialkaadmin zmiennazwe <stara> <nowa>` - Zmienia nazwę działki.
+Co najlepsze? **Właściciel może edytować uprawnienia każdej roli w grze!** Chcesz, żeby Zaufany mógł wyrzucać innych? Klikasz w GUI i gotowe.
 
-*Główne uprawnienie do komend admina: `zenithplots.command.admin`*
+### 🔮 Wizualizacje (Hologramy i Bordery)
+*   **Hologramy:** Nad centrum działki (blokiem serca) unosi się hologram ze statystykami. Wspieramy **DecentHolograms** i **FancyHolograms**.
+*   **Border:** Gracz może włączyć wizualizację granic swojej działki. Cząsteczki (particles) pokażą mu dokładnie, dokąd sięga jego teren. Kolor bordera? Też do wyboru w GUI!
 
-### Zarządzanie Pluginem
--   `/zenithplots reload` - Przeładowuje wszystkie konfiguracje i odświeża cache (`.manage`).
-
-*Uprawnienie: `zenithplots.command.admin.manage`*
+### ⏳ System Wygasania
+Działki nie są wieczne.
+*   Każda działka ma czas życia (np. 30 dni).
+*   Właściciel musi wejść w panel i opłacić przedłużenie.
+*   Jeśli zapomni? Działka wygasa, blok serca znika, a teren wraca do puli wolnych (lub zostaje wyczyszczony - zależy od Ciebie).
+*   **Powiadomienia:** Gracze dostają ostrzeżenia, gdy ich działka jest bliska wygaśnięcia.
 
 ---
 
-## 🛠️ Instalacja i Konfiguracja
+## 💻 Komendy
 
-1.  Pobierz najnowszą wersję pluginu z sekcji **[Releases](https://github.com/skunkyy/ZenithPlots/releases)**.
-2.  Umieść plik `ZenithPlots-1.0.jar` w folderze `plugins/` na swoim serwerze.
-3.  **Upewnij się, że masz zainstalowane wymagane zależności:**
-    -   ✅ **[Vault](https://www.spigotmc.org/resources/vault.34315/)**
-    -   ✅ Dowolny plugin ekonomii (np. EssentialsX, CMI, TheNewEconomy)
-4.  Dla pełnej funkcjonalności **zainstaluj zalecane zależności**:
-    -   ⭐ **[PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)** (Dla placeholderów)
-    -   ⭐ **[TAB](https://github.com/NEZNAMY/TAB)** (Dla dedykowanego scoreboardu na działkach)
-    -   ⭐ **[DecentHolograms](https://www.spigotmc.org/resources/decentholograms-1-8-1-20-4-papi-support-no-dependencies.96927/)** lub **FancyHolograms** (Dla hologramów nad działką)
-    -   ⭐ **[WorldGuard](https://dev.bukkit.org/projects/worldguard)** (Dla blokowania tworzenia działek w regionach)
-5.  Uruchom serwer, aby wygenerować domyślne pliki konfiguracyjne.
-6.  Dostosuj pliki `config.yml`, `messages.yml`, `roles.yml`, `upgrades.yml`, `ranking.yml` oraz pliki GUI w folderze `guis/` do swoich potrzeb.
-7.  Użyj komendy `/zenithplots reload`, aby zastosować zmiany.
+<details>
+<summary><b>Dla Graczy (Kliknij, aby rozwinąć)</b></summary>
+
+| Komenda | Opis |
+| :--- | :--- |
+| `/dzialka stworz <nazwa>` | Tworzy nową działkę w miejscu, w którym stoisz. |
+| `/dzialka panel` | Otwiera główne centrum dowodzenia działką. |
+| `/dzialka dom` | Teleportuje Cię bezpiecznie do Twojej działki. |
+| `/dzialka odwiedz <nazwa>` | Odwiedź działkę znajomego (jeśli jesteś dodany). |
+| `/dzialka informacje [nazwa]` | Pokazuje techniczne dane (rozmiar, wygasanie, ID). |
+| `/dzialka ranking` | Wyświetla topkę najlepszych działek. |
+| `/dzialka przelicz` | Przelicza punkty Twojej działki (z cooldownem). |
+| `/dzialka bloki` | Lista bloków, które dają punkty do rankingu. |
+| `/dzialka latanie` | Włącz/wyłącz latanie na swoim terenie. |
+| `/dzialka dodaj <gracz>` | Wyślij zaproszenie do innego gracza. |
+| `/dzialka akceptuj/odrzuc` | Reakcja na zaproszenie. |
+| `/dzialka wyrzuc <gracz>` | Usuń gracza z listy członków. |
+| `/dzialka zablokuj <gracz>` | Zbanuj gracza na swojej działce (nie wejdzie). |
+| `/dzialka odblokuj <gracz>` | Zdejmij bana. |
+| `/dzialka ustawdom` | Zmień miejsce teleportu `/dzialka dom`. |
+| `/dzialka zmiennazwe <nowa>` | Zmień nazwę swojej działki (kosztuje!). |
+| `/dzialka usun` | Usuń swoją działkę na zawsze. |
+
+</details>
+
+<details>
+<summary><b>Dla Administratora (Kliknij, aby rozwinąć)</b></summary>
+
+| Komenda | Opis |
+| :--- | :--- |
+| `/dzialkaadmin bypass` | **Tryb Boga:** Buduj, niszcz i otwieraj skrzynie na cudzych działkach. |
+| `/dzialkaadmin panel <nazwa>` | Otwórz panel zarządzania czyjejś działki. |
+| `/dzialkaadmin info <nazwa>` | Pełne dane techniczne (UUID, dokładne koordynaty, poziomy ulepszeń). |
+| `/dzialkaadmin lookup <gracz>` | Zobacz, jakie działki ma dany gracz (i gdzie jest członkiem). |
+| `/dzialkaadmin setowner <działka> <gracz>` | Przenieś własność działki na kogoś innego. |
+| `/dzialkaadmin teleport <nazwa>` | Teleport do działki. |
+| `/dzialkaadmin teleportwlasciciel <gracz>` | Teleport do działki danego gracza. |
+| `/dzialkaadmin fly` | Włącz latanie admina na dowolnej działce (omija zasady). |
+| `/dzialkaadmin przelicz <nazwa|*>` | Wymuś przeliczenie rankingu dla jednej lub wszystkich działek. |
+| `/dzialkaadmin przedluz <nazwa> <czas>` | Dodaj czas życia działce (np. `30d`). |
+| `/dzialkaadmin ulepszenia <nazwa> <typ> set <poziom>` | Ręcznie ustaw poziom ulepszenia. |
+| `/dzialkaadmin usun <nazwa>` | Usuń działkę gracza (z bazy i hologramu). |
+| `/dzialkaadmin dodaj/wyrzuc` | Zarządzaj członkami cudzych działek. |
+| `/zenithplots reload` | Przeładuj wszystkie pliki konfiguracyjne. |
+
+</details>
 
 ---
 
-## 🤝 Wsparcie i Społeczność
+## 🛠️ Instalacja i Wymagania
 
-Masz pomysł na nową funkcję, znalazłeś błąd lub po prostu chcesz porozmawiać? Dołącz do naszego serwera Discord!
+### 📦 Wymagane Pluginy
+Bez tego nie ruszymy:
+1.  **[Vault](https://www.spigotmc.org/resources/vault.34315/)** - Do obsługi ekonomii i uprawnień.
+2.  **Plugin Ekonomii** - Np. *EssentialsX*, *CMI*, *TheNewEconomy*. (Działki kosztują!).
+
+### 🧩 Zalecane (Dla pełnego efektu)
+1.  **[PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)** - Żeby wyświetlać dane na chacie/scoreboardzie.
+2.  **[TAB](https://github.com/NEZNAMY/TAB)** - Aby działał nasz **dedykowany scoreboard działkowy**.
+3.  **[WorldGuard](https://dev.bukkit.org/projects/worldguard)** - Aby zablokować tworzenie działek na spawnie.
+4.  **[DecentHolograms](https://www.spigotmc.org/resources/96927/)** lub **FancyHolograms** - Do wyświetlania statystyk nad działką.
+5.  **[ZenithCombatLog](https://github.com/skunkyy/ZenithCombatLog)** (lub inny kompatybilny) - Do blokowania ucieczki na działkę podczas walki.
+
+### ⚙️ Instrukcja
+1.  Pobierz `ZenithPlots-1.0.jar`.
+2.  Wrzuć do folderu `/plugins`.
+3.  Zrestartuj serwer.
+4.  (Opcjonalnie) Skonfiguruj połączenie z bazą danych w `config.yml` (domyślnie SQLite - plik lokalny).
+5.  Edytuj `messages.yml`, `upgrades.yml` i pliki GUI według własnego uznania.
+6.  Wpisz `/zenithplots reload`. Gotowe!
 
 ---
+
+## 📂 Pliki Konfiguracyjne
+
+Plugin generuje bogate pliki konfiguracyjne:
+*   `config.yml` - Główne ustawienia (baza danych, limity, koszty).
+*   `messages.yml` - **Każda** wiadomość jest do przetłumaczenia.
+*   `roles.yml` - Definicje ról i ich domyślnych uprawnień.
+*   `ranking.yml` - Wartości punktowe bloków i wzór na poziomy.
+*   `upgrades.yml` - Koszty i wartości dla każdego poziomu ulepszeń.
+*   `guis/*.yml` - Wygląd każdego menu (itemy, sloty, nazwy, lore).
+
+---
+
+## 📊 Placeholdery (PAPI)
+
+Chcesz użyć danych z pluginu na scoreboardzie, tabliście lub chacie? Proszę bardzo:
+
+| Placeholder | Opis |
+| :--- | :--- |
+| `%zenithplots_current_plot_name%` | Nazwa działki, na której stoisz. |
+| `%zenithplots_current_plot_owner%` | Właściciel działki, na której stoisz. |
+| `%zenithplots_current_plot_level%` | Poziom działki. |
+| `%zenithplots_current_plot_points%` | Punkty rankingu. |
+| `%zenithplots_current_plot_expire_timeleft%` | Czas do wygaśnięcia (np. "2d 4h"). |
+| `%zenithplots_current_plot_size_formatted%` | Rozmiar działki (np. "32x32"). |
+| `%zenithplots_current_plot_members_current%` | Liczba członków. |
+| `%zenithplots_owned_plot_name%` | Nazwa Twojej działki (gdziekolwiek jesteś). |
+| `%zenithplots_ranking_1_name%` | Nazwa działki TOP 1. |
+| `%zenithplots_ranking_1_owner%` | Właściciel działki TOP 1. |
+| `%zenithplots_plot_count%` | Ile działek posiadasz. |
+
+---
+
 <div align="center">
-  <em>Stworzone z ❤️ przez **skunky**</em>
+
+**Projekt tworzony z pasją.**
+Masz pomysł? Znalazłeś błąd? Pisz śmiało!
+
+Copyright © 2026 **skunkyy**. Wszelkie prawa zastrzeżone.
+
 </div>
